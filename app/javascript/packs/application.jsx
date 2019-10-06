@@ -15,3 +15,15 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+import React from 'react'
+import ReactDOM from 'react-dom'
+import PropTypes from 'prop-types'
+import Ckeditor from './Ckeditor'
+
+document.addEventListener('DOMContentLoaded', () => {
+  ReactDOM.render(
+    <Ckeditor />,
+    document.body.appendChild(document.createElement('div')),
+  )
+})
